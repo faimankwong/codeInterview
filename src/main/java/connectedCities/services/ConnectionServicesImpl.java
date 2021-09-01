@@ -29,7 +29,6 @@ public class ConnectionServicesImpl implements ConnectionServices{
 		String line;
 		try {
 			while ((line = textReader.readLine()) != null) {
-				// Check if direct relation can be found
 				String[] connectedCities = separateLine(line);
 				List<CityConnection> citiesList = new ArrayList<CityConnection>();
 				for (String city : connectedCities) {
